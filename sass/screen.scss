@@ -1,0 +1,179 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "compass";
+@import "reset.css";
+@import "anythingslider.css";
+
+// Variable
+$blue : #5fb4e4;
+$pink : #e5a4a6;
+$font-size :13px;
+
+// Global 
+body{
+	background:url(../img/bg.jpg) repeat;
+	overflow:hidden;
+}
+.container{
+	margin:0 auto;
+	width:960px;
+	clear:both;
+}
+a.padding{
+	font-size:$font-size;
+	padding:5px 25px;
+	color:#aaa;
+	@include text-shadow(#fff 1px 1px 1px);
+	text-decoration:none;
+	background:#e6e6e6;
+	@include border-radius(10px);
+	@include box-shadow(rgba(67,67,67,.3) 0 0 5px 0 inset);
+}
+a.padding:hover,a.current{
+	background:$blue;
+	color:#fff;
+	@include text-shadow(#333 1px 1px 1px);
+};
+a.padding.current{
+	background:$pink;
+};
+// Head
+#head{
+	background:url(../img/bg-head.jpg) repeat-x;
+	height:359px;
+}
+.logo{
+	background:url(../img/logo-l.jpg) no-repeat;
+	width:836px;
+	height:359px;
+	text-indent:-9999px;
+	margin:0 auto;
+}
+// Navigation
+div#nav{margin-top:-50px;}
+ul.nav{
+	text-align:center;
+	li{
+		display:inline-block;
+		text-align:center;
+		margin:0 10px;
+	}	
+	
+}
+.sticky{
+	background:url(../img/sticky-nav-bg.png) repeat-x ;
+	position:fixed;
+	left:0px;
+	top:0px;
+	margin:0;
+	padding:20px 0 0 0;
+	z-index: 100;
+	height:87px;
+	width:100%;
+}
+
+// Hire-me
+#hire-me{
+	.hire-container{
+		background:url(../img/hire-bg.png) no-repeat;
+		width:787px;
+		height:73px;
+		margin:60px auto;
+		p{
+			padding:30px;
+			padding-left:80px;
+			color:#aaa;
+			@include text-shadow(#fff 1px 1px 1px);
+		}
+		span{position:absolute;margin-top:-70px;margin-left:600px;}
+		a.hire-me{
+			background:url(../img/hire-me.png) no-repeat 0 0;
+			width:106px;
+			height:33px;
+			display:block;
+			text-indent:-9999px;
+		}
+		a.hire-me:hover{
+			background-position:0 -33px;	
+		}
+	}
+}
+
+// Panel
+.ribbon{
+	background:$blue;
+	padding:20px 50px;
+	width:auto;
+	float:left;
+	font-size:$font-size * 2;
+	color:#fff;
+	@include box-shadow(rgba(67,67,67,.3) 0 0 5px 0 inset);
+	@include text-shadow(rgba(0,0,0,.3) -1px -1px 1px );
+	@include border-radius(0px 50px 50px 0px,0px 50px 50px 0px);
+	&.right{
+		float:right;
+		background:$pink;
+		@include border-radius(50px 0px 0px 50px,50px 0px 0px 50px);
+		margin-right:-700px;
+	}
+	margin-left:-700px; //滑入/滑出动画
+}
+.panel{
+	padding-bottom:250px;
+	background:url(../img/panel-bottom.jpg) repeat-x 0 480px;
+	&#icon-panel{
+		margin-top:300px;
+	}
+}
+.desc{
+	&.icon{
+		width:366px;
+		height:316px;
+		background:url(../img/icon-desc.png) no-repeat;
+		float:right;
+		margin-top:-340px;
+		margin-right:-700px;
+	}
+	&.logo{
+		width:454px;
+		height:360px;
+		background:url(../img/logo-desc.png) no-repeat;
+		float:left;
+		margin-top:30px;
+		margin-left:-700px;
+	}
+}
+
+// Slider
+.slider-container{
+	&.right{
+		float:right;
+	}
+}
+.img-wrapper{
+	padding:20px;
+}
+img{
+	border:white solid 3px;
+	display:block;
+	@include border-radius(3px,3px);
+	@include box-shadow(rgba(0,0,0,.15) 0 0 15px);
+}
+
+// Follow
+#follow{
+	margin-top:-150px;
+	.container{
+		background:url(../img/cartoon-logo.png) no-repeat center 60px;
+		height:200px;
+		div{
+			text-align:center;
+			color:#aaa;
+			@include text-shadow(#fff 1px 1px 1px);
+		}
+	}
+}
