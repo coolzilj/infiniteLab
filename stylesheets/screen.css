@@ -1,0 +1,259 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(reset.css);
+@import url(anythingslider.css);
+/* line 17, ../sass/screen.scss */
+body {
+  background: url(../img/bg.jpg) repeat;
+  overflow: hidden;
+}
+
+/* line 21, ../sass/screen.scss */
+.container {
+  margin: 0 auto;
+  width: 960px;
+  clear: both;
+}
+
+/* line 26, ../sass/screen.scss */
+a.padding {
+  font-size: 13px;
+  padding: 5px 25px;
+  color: #aaa;
+  text-shadow: white 1px 1px 1px;
+  text-decoration: none;
+  background: #e6e6e6;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  -webkit-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  -o-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+}
+
+/* line 36, ../sass/screen.scss */
+a.padding:hover, a.current {
+  background: #5fb4e4;
+  color: #fff;
+  text-shadow: #333333 1px 1px 1px;
+}
+
+/* line 41, ../sass/screen.scss */
+a.padding.current {
+  background: #e5a4a6;
+}
+
+/* line 45, ../sass/screen.scss */
+#head {
+  background: url(../img/bg-head.jpg) repeat-x;
+  height: 359px;
+}
+
+/* line 49, ../sass/screen.scss */
+.logo {
+  background: url(../img/logo-l.jpg) no-repeat;
+  width: 836px;
+  height: 359px;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+
+/* line 57, ../sass/screen.scss */
+div#nav {
+  margin-top: -50px;
+}
+
+/* line 58, ../sass/screen.scss */
+ul.nav {
+  text-align: center;
+}
+/* line 60, ../sass/screen.scss */
+ul.nav li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+
+/* line 67, ../sass/screen.scss */
+.sticky {
+  background: url(../img/sticky-nav-bg.png) repeat-x;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  z-index: 100;
+  height: 87px;
+  width: 100%;
+}
+
+/* line 81, ../sass/screen.scss */
+#hire-me .hire-container {
+  background: url(../img/hire-bg.png) no-repeat;
+  width: 787px;
+  height: 73px;
+  margin: 60px auto;
+}
+/* line 86, ../sass/screen.scss */
+#hire-me .hire-container p {
+  padding: 30px;
+  padding-left: 80px;
+  color: #aaa;
+  text-shadow: white 1px 1px 1px;
+}
+/* line 92, ../sass/screen.scss */
+#hire-me .hire-container span {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 600px;
+}
+/* line 93, ../sass/screen.scss */
+#hire-me .hire-container a.hire-me {
+  background: url(../img/hire-me.png) no-repeat 0 0;
+  width: 106px;
+  height: 33px;
+  display: block;
+  text-indent: -9999px;
+}
+/* line 100, ../sass/screen.scss */
+#hire-me .hire-container a.hire-me:hover {
+  background-position: 0 -33px;
+}
+
+/* line 107, ../sass/screen.scss */
+.ribbon {
+  background: #5fb4e4;
+  padding: 20px 50px;
+  width: auto;
+  float: left;
+  font-size: 26px;
+  color: #fff;
+  -moz-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  -webkit-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  -o-box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  box-shadow: rgba(67, 67, 67, 0.3) 0 0 5px 0 inset;
+  text-shadow: rgba(0, 0, 0, 0.3) -1px -1px 1px;
+  -webkit-border-radius: 0px 0px;
+  -moz-border-radius: 0px 50px 50px 0px / 0px 50px 50px 0px;
+  -o-border-radius: 0px 50px 50px 0px / 0px 50px 50px 0px;
+  -ms-border-radius: 0px 50px 50px 0px / 0px 50px 50px 0px;
+  -khtml-border-radius: 0px 50px 50px 0px / 0px 50px 50px 0px;
+  border-radius: 0px 50px 50px 0px / 0px 50px 50px 0px;
+  margin-left: -700px;
+}
+/* line 117, ../sass/screen.scss */
+.ribbon.right {
+  float: right;
+  background: #e5a4a6;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 0px 0px 50px / 50px 0px 0px 50px;
+  -o-border-radius: 50px 0px 0px 50px / 50px 0px 0px 50px;
+  -ms-border-radius: 50px 0px 0px 50px / 50px 0px 0px 50px;
+  -khtml-border-radius: 50px 0px 0px 50px / 50px 0px 0px 50px;
+  border-radius: 50px 0px 0px 50px / 50px 0px 0px 50px;
+  margin-right: -700px;
+}
+
+/* line 125, ../sass/screen.scss */
+.panel {
+  padding-bottom: 250px;
+  background: url(../img/panel-bottom.jpg) repeat-x 0 480px;
+}
+/* line 128, ../sass/screen.scss */
+.panel#icon-panel {
+  margin-top: 300px;
+}
+
+/* line 133, ../sass/screen.scss */
+.desc.icon {
+  width: 366px;
+  height: 316px;
+  background: url(../img/icon-desc.png) no-repeat;
+  float: right;
+  margin-top: -340px;
+  margin-right: -700px;
+}
+/* line 141, ../sass/screen.scss */
+.desc.logo {
+  width: 454px;
+  height: 360px;
+  background: url(../img/logo-desc.png) no-repeat;
+  float: left;
+  margin-top: 30px;
+  margin-left: -700px;
+}
+/* line 149, ../sass/screen.scss */
+.desc.wp-theme {
+  width: 421px;
+  height: 322px;
+  background: url(../img/wp-theme-desc.png) no-repeat;
+  float: right;
+  margin-top: -340px;
+  margin-left: -700px;
+}
+/* line 157, ../sass/screen.scss */
+.desc.ui {
+  width: 416px;
+  height: 360px;
+  background: url(../img/ui-desc.png) no-repeat;
+  float: left;
+  margin-top: 30px;
+  margin-left: -700px;
+}
+/* line 165, ../sass/screen.scss */
+.desc.print {
+  width: 371px;
+  height: 322px;
+  background: url(../img/print-desc.png) no-repeat;
+  float: right;
+  margin-top: -340px;
+  margin-left: -700px;
+}
+
+/* line 177, ../sass/screen.scss */
+.slider-container.right {
+  float: right;
+}
+
+/* line 181, ../sass/screen.scss */
+.img-wrapper {
+  padding: 20px;
+}
+
+/* line 184, ../sass/screen.scss */
+img {
+  border: white solid 3px;
+  display: block;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  -o-border-radius: 3px / 3px;
+  -ms-border-radius: 3px / 3px;
+  -khtml-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 15px;
+  -o-box-shadow: rgba(0, 0, 0, 0.15) 0 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 15px;
+}
+
+/* line 192, ../sass/screen.scss */
+#follow {
+  margin-top: -150px;
+}
+/* line 194, ../sass/screen.scss */
+#follow .container {
+  background: url(../img/cartoon-logo.png) no-repeat center 60px;
+  height: 200px;
+}
+/* line 197, ../sass/screen.scss */
+#follow .container div {
+  text-align: center;
+  color: #aaa;
+  text-shadow: white 1px 1px 1px;
+}
